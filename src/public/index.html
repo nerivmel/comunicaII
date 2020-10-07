@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORRADORES UDEA</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1'>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="/js/drawing.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">contacto</a></li>
+            <li><a href="#">funcionalidad</a></li>
+        </ul>
+    </div>
+    <hr/>
+    <div class="title"><h1> Cuaderno En linea Colectivo UdeA </h1></div>
+    <hr/>
+
+    <section id="pantalla-dividida">
+        <div class="izquierda">
+            <div class="fluid">
+                <div class="col-md-6" id="canvas-parent">
+                    <button class="btn btn-default" id="borrar_button">Borrador</button>
+                    <button class="btn btn-default" id="lapiz_button">Lapiz</button>
+                    <button class="btn btn-default" id="color1_button"></button>
+                    <button class="btn btn-default" id="color2_button"></button>
+                    <button class="btn btn-default" id="color3_button"></button>
+                    <button class="btn btn-default" id="color4_button"></button>
+                    <button class="btn btn-default" id="clear_button">Limpiar tablero</button>
+                    
+                    
+                    <div class="well drawing-space" id="drawing-space">
+                        <canvas id="drawing"></canvas>
+                    </div>
+                    <button class="btn btn-default" id="descarga_button">Descargar Imagen</button>
+                </div>
+            </div>
+        
+        </div>
+        <div class="derecha">
+            <div class="fluid">
+                <div class="col-md-6">
+                    <div class="well video-space" id="video-space">
+                        <h1>Chat en linea</h1>
+                        <textarea id="notes_textarea">
+            
+                        </textarea>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- script que sirve para crear una variable io en el navegador-->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+
+    <!-- TITULO -->
+    
+    <!-- TITULO -->
+    
+    <canvas id="drawing"  height="500"></canvas>
+    
+    <script src="/js/notes.js"></script>
+</body>
+</html>
