@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         mouse.pos = getMousePos(canvas, e);
         mouse.move = true;
     };
+    //pijaaaaaaaaaaaaaaa
 
     document.getElementById('clear_button').addEventListener("click",function(){
         socket.emit('clear_canvas');
